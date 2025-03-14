@@ -1,40 +1,61 @@
-# Astro Starter Kit: Basics
+# 🌟 APLICACIÓN DE MUNICIPIOS DE CHUQUISACA
 
-```sh
-npm create astro@latest -- --template basics
-```
+## 📖 Descripción
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este proyecto está desarrollado con [Astro](https://astro.build/) y tiene como objetivo proporcionar información turistica sobre los municipios de chuquisaca.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Tecnologías y Dependencias
 
-## 🚀 Project Structure
+- **Astro**: `>=5.5.2`
+- **Node.js**: `>=18.20.4`
+- **Tailwind**: `>=4.0.14`
+- **React**: `>=19.0.0`
+- **ESLint**: Para control de calidad del código
+- **Prettier**: Para formateo automático
 
-Inside of your Astro project, you'll see the following folders and files:
+---
+
+## 📂 Estructura del Proyecto
 
 ```text
-/
+app-municipios-chuquisaca
+│
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── components/
+│   │   └── feature1/
+│   │       └── component.astro
+│   │       └── component.jsx
+│   │       └── component.tsx
+│   │   └── feature2/
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro
+│   │   └── es/
+│   │   └── en/
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
+
+## ⚙️ Instalación y Uso
+
+```sh
+git clone https://github.com/ferd-dev/app-municipios-chuquisaca.git
+cd app-municipios-chuquisaca.git
+
+npm install
+npm run dev
+```
+
+Luego, abre http://localhost:4321 en tu navegador.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Commandos                 | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
@@ -42,7 +63,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
