@@ -1,10 +1,13 @@
 ---
-import Counter from "@components/Counter";
-import Welcome from "@components/Welcome.astro";
-import Layout from "@layouts/Layout.astro";
+import Galeria from '@components/gallery/Galeria.astro'
+import Hero from '@components/hero/Hero.astro'
+import Map from '@components/map/Map'
+import TouristPlaces from '@components/touristPlaces/TouristPlaces.astro'
+import Layout from '@layouts/Layout.astro'
 ---
 
-<Layout>
-  <Welcome />
-  <Counter client:load />
-</Layout>
+<Hero />
+<Map client:load />
+<Galeria />
+<TouristPlaces />
+<Layout />
