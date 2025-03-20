@@ -6,8 +6,9 @@ import TouristPlaces from '@components/touristPlaces/TouristPlaces.astro'
 import Layout from '@layouts/Layout.astro'
 ---
 
-<Hero />
-<Map client:load />
-<Galeria />
-<TouristPlaces />
-<Layout />
+<Layout>
+  <Hero />
+  <Map client:load />
+  <Galeria />
+  <TouristPlaces />
+</Layout>
