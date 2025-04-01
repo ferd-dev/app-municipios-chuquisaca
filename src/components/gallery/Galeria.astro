@@ -1,59 +1,40 @@
-<div class="page-body mt-6">
-  <div class="container-xl">
-    <div class="row g-2 g-md-3">
-      <div class="col-lg-6"></div>
-      <div class="row g-2 g-md-3">
-        <p class="font-bold text-dark mt-5 fs-1">@CHUQUISACA</p>
-        <div class="col-6">
-          <a data-fslightbox="gallery" href="/test.jpg">
-            <!-- Photo -->
-            <div
-              class="img-responsive img-responsive-1x1 rounded-3 border"
-              style="background-image: url(/test.jpg)">
-            </div>
-          </a>
-        </div>
-        <div class="col-6">
-          <div class="row g-2 g-md-3">
-            <div class="col-6">
-              <a data-fslightbox="gallery" href="/test.jpg">
-                <!-- Photo -->
-                <div
-                  class="img-responsive img-responsive-1x1 rounded-3 border"
-                  style="background-image: url(/test.jpg)">
-                </div>
-              </a>
-            </div>
-            <div class="col-6">
-              <a data-fslightbox="gallery" href="/test.jpg">
-                <!-- Photo -->
-                <div
-                  class="img-responsive img-responsive-1x1 rounded-3 border"
-                  style="background-image: url(/test.jpg)">
-                </div>
-              </a>
-            </div>
-            <div class="col-6">
-              <a data-fslightbox="gallery" href="/test.jpg">
-                <!-- Photo -->
-                <div
-                  class="img-responsive img-responsive-1x1 rounded-3 border"
-                  style="background-image: url(/test.jpg)">
-                </div>
-              </a>
-            </div>
-            <div class="col-6">
-              <a data-fslightbox="gallery" href="/test.jpg">
-                <!-- Photo -->
-                <div
-                  class="img-responsive img-responsive-1x1 rounded-3 border"
-                  style="background-image: url(/test.jpg)">
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+---
+import { onMount } from "astro/runtime";
+
+
+const images = [
+  "/galeria/image1.png",
+  "/galeria/image2.png",
+  "/galeria/image3.png",
+  "/galeria/image4.png",
+  "/galeria/image5.png",
+  "/galeria/image6.png",
+];
+
+let randomImages = [...images].sort(() => Math.random() - 0.5).slice(0, 3);
+let showAll = false;
+
+const toggleGallery = () => {
+  showAll = !showAll;
+   console.log("Toggle Gallery:", showAll);
+};
+---
+
+<section class="gallery-container">
+  <h2>@ CHUQUISACA</h2>
+  
+  <div class="gallery-grid">
+    {(showAll ? images : randomImages).map((img) => (
+      <img src={img} alt="Imagen de la galería" class="gallery-img" />
+    ))}
   </div>
-</div>
+
+  <button class="btn" onClick={toggleGallery}>
+    {showAll ? "Ver menos" : "Ver todas las imágenes"}
+  </button>
+</section>
+
+<style>
+  @import "./style_galeria.css";
+</style>
+
