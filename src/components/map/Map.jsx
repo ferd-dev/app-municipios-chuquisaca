@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import Info from './Info'
 import MapSvg from './MapSvg'
+import data from './../../data/municipalities.json'
+
+const municipaly = data.find((item) => item.id === parseInt(1))
 
 const Map = () => {
-  const [selectedRegion, setSelectedRegion] = useState()
+  const [selectedRegion, setSelectedRegion] = useState(municipaly)
 
   const handleRegionChange = (regionData) => {
     setSelectedRegion(regionData)
@@ -12,15 +15,15 @@ const Map = () => {
     <div
       className="sobre"
       style={{
-        marginTop: '-150px',
+        marginTop: '-130px',
         position: 'relative',
         zIndex: 10, // Asegura que esté por encima
       }}>
-      <div className="container-xl">
-        <div className="row row-deck row-cards">
+      <div className="mx-5">
+        <div className="row row-deck row-cards ">
           <div className="col-sm-12 col-lg-12">
             <div
-              className="card shadow-lg"
+              className="card rounded-4 "
               style={{
                 top: '50px',
                 left: '50%',
@@ -28,11 +31,15 @@ const Map = () => {
                 zIndex: 30,
               }}>
               <div className="card-body">
-                <div className="row">
-                  <div className="col-6">
+                <p className="fs-1 text-center text-dark">
+                  #Un_paseo_por_los_municipios ❤️ Chuquisaca
+                </p>
+                <div className="hr"></div>
+                <div className="row align-items-center">
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-12">
                     <Info region={selectedRegion} />
                   </div>
-                  <div className="col-6">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
                     <MapSvg onRegionSelect={handleRegionChange} />
                   </div>
                 </div>
@@ -43,19 +50,6 @@ const Map = () => {
       </div>
     </div>
   )
-
-  // return (
-  //   <div className="bg-[#fcf2de] pb-16">
-  //     <section className="relative -mt-15 py-12 bg-white mx-auto px-4 rounded-2xl shadow-lg max-w-5/6">
-  //       <div className="container mx-auto px-4">
-  //         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-  //           <Info region={selectedRegion} />
-  //           <MapSvg onRegionSelect={handleRegionChange} />
-  //         </div>
-  //       </div>
-  //     </section>
-  //   </div>
-  // )
 }
 
 export default Map

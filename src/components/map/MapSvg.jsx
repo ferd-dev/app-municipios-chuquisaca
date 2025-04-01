@@ -1,9 +1,13 @@
 import './mapSvg.css'
 
 import data from './../../data/municipalities.json'
+import { useState } from 'react'
 
 const MapSvg = ({ onRegionSelect }) => {
+  const [classActive, setClassActive] = useState('mapsvg-region activeMap')
+
   const handleClick = (e) => {
+    setClassActive('mapsvg-region')
     const uuid = e.target.getAttribute('uuid')
 
     const municipaly = data.find((item) => item.id === parseInt(uuid)) || null
@@ -17,7 +21,7 @@ const MapSvg = ({ onRegionSelect }) => {
         width="500"
         height="500"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-full w-full"
+        className="h-full w-full p-3"
         viewBox="0 0 500 500">
         <path
           d="M140,126 L139,129 L140,131 L132,137 L126,133 L121,134 L119,137 L119,140 L114,144 L109,144 L105,142 L94,147 L86,147 L81,145 L84,138 L85,133 L81,127 L76,119 L74,114 L78,113 L80,110 L85,110 L90,113 L92,112 L92,108 L90,104 L90,102 L95,100 L94,96 L90,95 L89,92 L93,89 L93,84 L95,85 L95,77 L99,74 L101,72 L103,79 L105,81 L102,85 L104,88 L107,91 L115,90 L120,92 L124,99 L131,100 L135,109 Z"
@@ -78,7 +82,7 @@ const MapSvg = ({ onRegionSelect }) => {
           d="M71,34 L77,37 L84,38 L93,42 L96,47 L95,48 L98,60 L98,63 L101,72 L95,78 L95,86 L92,87 L92,88 L89,93 L94,97 L94,100 L90,105 L93,110 L91,112 L90,112 L86,110 L80,111 L78,113 L76,115 L76,119 L80,127 L84,133 L84,140 L80,145 L74,142 L72,139 L60,135 L49,127 L48,119 L45,114 L41,113 L34,105 L24,104 L24,96 L19,90 L30,86 L32,83 L42,80 L42,73 L45,71 L42,64 L45,59 L43,54 L48,48 L44,45 L47,38 L42,34 L36,32 L31,25 L23,18 L18,16 L14,11 L4,5 L10,0 L18,2 L21,5 L30,5 L31,3 L43,5 L51,8 L57,7 L57,11 L63,12 L63,16 L68,18 L72,26 Z"
           fill="#9774ee"
           strokeWidth="1.77073"
-          className="mapsvg-region "
+          className={classActive}
           uuid="1"
           onMouseOver={handleClick}></path>
 
