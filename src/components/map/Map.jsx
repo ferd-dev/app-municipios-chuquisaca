@@ -13,15 +13,14 @@ const Map = () => {
   }
   return (
     <div
-      className="sobre"
       style={{
         marginTop: '-130px',
         position: 'relative',
         zIndex: 10, // Asegura que esté por encima
       }}>
       <div className="mx-5">
-        <div className="row row-deck row-cards ">
-          <div className="col-sm-12 col-lg-12">
+        <div className="row row-cards ">
+          <div className="col-sm-12 col-lg-10 col-md-10 col-12 mx-auto">
             <div
               className="card rounded-4 "
               style={{
