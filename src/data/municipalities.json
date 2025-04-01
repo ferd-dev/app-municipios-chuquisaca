@@ -2,51 +2,61 @@
   {
     "id": 1,
     "name": "Samuel Oropeza",
-    "description": "Samuel Oropeza es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Monteagudo. La provincia lleva el nombre de Samuel Oropeza, un militar boliviano que luchó en la Guerra Federal de 1898."
+    "description": "Samuel Oropeza es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Monteagudo. La provincia lleva el nombre de Samuel Oropeza, un militar boliviano que luchó en la Guerra Federal de 1898.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 2,
     "name": "Yamparaez",
-    "description": "Yamparáez es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Tarabuco. La provincia lleva el nombre de los yamparas, un grupo étnico que habitó la región."
+    "description": "Yamparáez es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Tarabuco. La provincia lleva el nombre de los yamparas, un grupo étnico que habitó la región.",
+    "images": ["test5.jpg", "test6.jpg", "test7.jpg", "test4.jpg"]
   },
   {
     "id": 3,
     "name": "Jaime Zudáñez",
-    "description": "Jaime Zudáñez es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Zudáñez. La provincia lleva el nombre de Jaime Zudáñez, un militar boliviano que luchó en la Guerra Federal de 1898."
+    "description": "Jaime Zudáñez es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Zudáñez. La provincia lleva el nombre de Jaime Zudáñez, un militar boliviano que luchó en la Guerra Federal de 1898.",
+    "images": ["test1.jpg", "test10.jpg", "test9.jpg", "test4.jpg"]
   },
   {
     "id": 4,
     "name": "Belisario Boeto",
-    "description": "Belisario Boeto es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Serrano. La provincia lleva el nombre de Belisario Boeto, un militar boliviano que luchó en la Guerra Federal de 1898."
+    "description": "Belisario Boeto es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Serrano. La provincia lleva el nombre de Belisario Boeto, un militar boliviano que luchó en la Guerra Federal de 1898.",
+    "images": ["test3.jpg", "test7.jpg", "test8.jpg", "test5.jpg"]
   },
   {
     "id": 5,
     "name": "Tomina",
-    "description": "Tomina es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Padilla. La provincia lleva el nombre de Tomina, un río que atraviesa la región."
+    "description": "Tomina es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Padilla. La provincia lleva el nombre de Tomina, un río que atraviesa la región.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 6,
     "name": "Juana Azurduy de Padilla",
-    "description": "Juana Azurduy de Padilla es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Azurduy. La provincia lleva el nombre de Juana Azurduy de Padilla, una heroína de la independencia de Bolivia."
+    "description": "Juana Azurduy de Padilla es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Azurduy. La provincia lleva el nombre de Juana Azurduy de Padilla, una heroína de la independencia de Bolivia.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 7,
     "name": "Hernando Siles",
-    "description": "Hernando Siles es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Monteagudo. La provincia lleva el nombre de Hernando Siles, un político boliviano que fue presidente de Bolivia."
+    "description": "Hernando Siles es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Monteagudo. La provincia lleva el nombre de Hernando Siles, un político boliviano que fue presidente de Bolivia.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 8,
     "name": "Nor Cinti",
-    "description": "Nor Cinti es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Camargo. La provincia lleva el nombre de Cinti, una región histórica de Bolivia."
+    "description": "Nor Cinti es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Camargo. La provincia lleva el nombre de Cinti, una región histórica de Bolivia.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 9,
     "name": "Sud Cinti",
-    "description": "Sud Cinti es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Abecia. La provincia lleva el nombre de Cinti, una región histórica de Bolivia."
+    "description": "Sud Cinti es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Abecia. La provincia lleva el nombre de Cinti, una región histórica de Bolivia.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   },
   {
     "id": 10,
     "name": "Luis Calvo",
-    "description": "Luis Calvo es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Vaca Guzmán. La provincia lleva el nombre de Luis Calvo, un político boliviano que fue presidente de Bolivia."
+    "description": "Luis Calvo es una provincia del departamento de Chuquisaca en Bolivia. Su capital es Villa Vaca Guzmán. La provincia lleva el nombre de Luis Calvo, un político boliviano que fue presidente de Bolivia.",
+    "images": ["test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg"]
   }
 ]
