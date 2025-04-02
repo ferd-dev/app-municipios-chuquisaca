@@ -1,43 +1,61 @@
-<div class="page-body">
-  <div class="container-xl">
-    <h1
-      class="font-bold text-dark mt-5 mb-4 text-center"
-      style="font-size: 2.5rem;"
-    >
-      Explore Actividades
-    </h1>
-    <div class="row ">
-      <div class="col  justify-content-center  ">
+---
+import actividades from "../../data/activities.json";
+import './TouristPlaces.css';
+---
+
+<div class="container d-flex justify-content-center align-items-center ">
+  <div class="carousel slide" id="activityCarousel" data-bs-ride="carousel">
+ 
+    <div class="carousel-indicators">
+      {actividades.map((_, index) => (
+        <button
+          type="button"
+          data-bs-target="#activityCarousel"
+          data-bs-slide-to={index}
+          class={index === 0 ? "active" : ""}
+          aria-current={index === 0 ? "true" : "false"}
+          aria-label={`Slide ${index + 1}`}
+        ></button>
+      ))}
+      
+    </div>
+
+    <div class="carousel-inner">
+      <h1 class="font-bold text-dark mt-5 mb-4 text-center" style={{ fontSize: '2.0rem' }}>
+        Explore Actividades
+      </h1>
+      {actividades.map((actividad, index) => (
+        <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
         
-        <div class="col ">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3 class="fs-2">imagen de la actividad</h3>
+        
+          <div class="row g-0 align-items-center">
+            <div class="col-md-6 position-relative">
+              <div class="image-frame"> 
+                <img
+                  src={actividad.imageBase64 || "/default-image.png"}
+                  class="img-fluid rounded-start"
+                  alt={actividad.name}
+                />
+              </div>
+              
+              <button class="carousel-control-prev custom-control" type="button" data-bs-target="#activityCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next custom-control" type="button" data-bs-target="#activityCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            
+            <!-- Texto -->
+            <div class="col-md-6 p-3 text-center">
+              <h5 class="card-title">{actividad.name}</h5>
+              <p class="card-text">{actividad.description}</p>
+              <small class="text-muted">{actividad.municipio}</small>
             </div>
           </div>
-        
         </div>
-      </div>
-
-    
-      
-        
-    <div class="col-md-4 col-lg-6">
-      <div class="card-body">
-        <h2 class="text-center mb-3" style="font-size: 1.8rem;">
-          Thrill Above Ground: The Zip Line Adventure
-        </h2>
-        <p class="text-center" style="font-size: 1.1rem;">
-          Embark on an adrenaline-fueled journey, zipping through lush
-          landscapes, feeling the wind rush past, and experiencing heights from
-          breathtaking views. Unleash your inner adventurer today.
-        </p>
-      </div>
+      ))}
     </div>
-
-    
-    </div>
-  
-
   </div>
 </div>
+
