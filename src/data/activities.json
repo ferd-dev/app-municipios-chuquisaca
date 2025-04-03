@@ -3,35 +3,35 @@
         "id": 1,
         "name": "Caminata al Cráter de Maragua",
         "description": "Ruta geológica única con formaciones rocosas coloridas y fósiles prehistóricos. Ideal para trekking y fotografía.",
-        "imageBase64": "public/actividades/crater.png",
+        "imageBase64": "./actividades/crater.png",
         "municipio": "Sucre"
     },
     {
         "id": 2,
         "name": "Visita al Parque Cretácico",
         "description": "Museo al aire libre con más de 5,000 huellas de dinosaurios y réplicas a tamaño real.",
-        "imageBase64": "public/actividades/ParkCretasico.jpeg",
+        "imageBase64": "./actividades/ParkCretasico.jpeg",
         "municipio": "Sucre"
     },
     {
         "id": 3,
         "name": "Rappel en el Cañón de Icla",
         "description": "Descenso por paredes rocosas de hasta 50 metros en un paisaje espectacular.",
-        "imageBase64": "public/actividades/CañonIcla.jpeg",
+        "imageBase64": "./actividades/CañonIcla.jpeg",
         "municipio": "Icla"
     },
     {
         "id": 4,
         "name": "Termas de Palmira",
         "description": "Aguas termales medicinales con temperaturas entre 30°C y 45°C en un entorno natural.",
-        "imageBase64": "public/actividades/Termas de Palmira.jpeg",
+        "imageBase64": "./actividades/Termas de Palmira.jpeg",
         "municipio": "Yotala"
     },
     {
         "id": 5,
         "name": "Ciclismo de montaña en Chataquila",
         "description": "Rutas desafiantes desde el mirador de Chataquila hasta la comunidad de Chaunaca.",
-        "imageBase64": "public/actividades/chataquilla.jpeg",
+        "imageBase64": "./actividades/chataquilla.jpeg",
         "municipio": "Sucre"
     },
     {
@@ -45,14 +45,14 @@
         "id": 7,
         "name": "Caminata a las Siete Cascadas",
         "description": "Recorrido por siete saltos de agua cristalina en el área protegida de Maragua.",
-        "imageBase64": "public/actividades/7cascadas.jpeg",
+        "imageBase64": "./actividades/7cascadas.jpeg",
         "municipio": "Yamparáez"
     },
     {
         "id": 8,
         "name": "Tour gastronómico en Tarabuco",
         "description": "Degustación de platos típicos como el mondongo y el ají de lengua durante la feria dominical.",
-        "imageBase64": "public/actividades/tourGastronomico.jpeg",
+        "imageBase64": "./actividades/tourGastronomico.jpeg",
         "municipio": "Tarabuco"
     },
 
@@ -60,7 +60,7 @@
         "id": 9,
         "name": "Tour arquitectónico por el Casco Viejo",
         "description": "Recorrido por los principales monumentos coloniales de la Ciudad Blanca, Patrimonio de la Humanidad.",
-        "imageBase64": "public/actividades/cascoViejo.jpeg",
+        "imageBase64": "./actividades/cascoViejo.jpeg",
         "municipio": "Sucre"
     }
 ]
